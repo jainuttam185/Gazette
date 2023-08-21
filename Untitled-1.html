@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.container{
+    display:grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 300px 300px;
+    grid-row-gap: 20px;
+    background-color: black;
+}
+
+.container1{
+    display:grid;
+    grid-template-columns: 33.33%  33.33% 33.33%;
+    grid-template-areas:'tech auto auto' 'tech auto auto' ;
+    padding-top:50px;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    grid-template-rows: 270px 200px;
+    width: calc(100% - 60px);
+}
+
+.container2{
+    margin-top: 30px;
+    border-top: solid grey;
+    padding:20px 60px 0 60px;
+    display:flex;
+    justify-content: space-between;
+    height:70px;
+}
+
+.image{
+    position:relative;
+    color:white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 15px;
+  left: 30px;
+}
+
+.top-left {
+  position: absolute;
+  top: 15px;
+  left: 30px;
+}
+.top-right {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
+
+img:hover{
+    opacity: 0.7;
+    transition: 0.35s;
+}
+
+.item1 { grid-area: tech; }
+
+ul.navlist{
+    list-style-type:none;
+    padding:0;
+}
+
+li{
+    float:left;
+    border-left:solid black;
+}
+
+li a{
+    margin:15px;
+    text-decoration:none;
+    color:black;
+    font-size:17px;
+    font-family: Lato,sans-serif;
+}
+
+input[type=text]{
+    float:right;
+    border:none;
+}
+
+.deco a{text-decoration: none;font-size: 25px; color: blue;}
+.deco1 a{text-decoration: none;font-size: 16px; color: white;}
+.deco1 a:hover{opacity: 0.7;}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="image deco1"><a href="#"><img src="C:\Users\AdminWS\Downloads\icecream.jpg" width="100%" height="300px"></a>
+            <div class="top-left"><a href="#"><b>FOOD</b></a></div>
+            <div class="bottom-left"><a href="#" style="font-size: 25px; font-family: Lato,sans-serif;"><b>Dairy-Free Ice Cream</b></a></div>
+            <div class="top-right"><a href="#"><b>2 COMMENTS</b></a></div>
+        </div>
+        <div class="image deco1"><a href="#"><img src="C:\Users\AdminWS\Downloads\retro.jpg" width="100%" height="300px"></a>
+            <div class="top-left"><a href="#"><b>CARS</b></a></div>
+            <div class="bottom-left"><a href="#" style="font-size: 25px; font-family: Lato,sans-serif;"><b>Retro cars are back!</b></a></div>
+            <div class="top-right"><a href="#"><b>2 COMMENTS</b></a></div>
+        </div>
+        <div class="image deco1"><a href="#"><img src="C:\Users\AdminWS\Downloads\watch.jpg" width="100%" height="300px"></a>
+            <div class="top-left"><a href="#"><b>TECHNOLOGY</b></a></div>
+            <div class="bottom-left"><a href="#" style="font-size: 25px; font-family: Lato,sans-serif;"><b>New Watch</b></a></div>
+            <div class="top-right"><a href="#"><b>2 COMMENTS</b></a></div>
+        </div>
+        <div class="image deco1"><a href="#"><img src="C:\Users\AdminWS\Downloads\cookies.jpg" width="100%" height="300px"></a>
+            <div class="top-left"><a href="#"><b>FOOD</b></a></div>
+            <div class="bottom-left"><a href="#" style="font-size: 25px; font-family: Lato,sans-serif;"><b>Coffee cookies</b></a></div>
+            <div class="top-right"><a href="#"><b>1 COMMENTS</b></a></div>
+        </div>
+        <div class="image deco1"><a href="#"><img src="C:\Users\AdminWS\Downloads\laptop.jpg" width="100%" height="300px"></a>
+            <div class="top-left"><a href="#"><b>TECHNOLOGY</b></a></div>
+            <div class="bottom-left"><a href="#" style="font-size: 25px; font-family: Lato,sans-serif;"><b>Latest Laptop review</b></a></div>
+            <div class="top-right"><a href="#"><b>1 COMMENTS</b></a></div>
+        </div>
+        <div class="image deco1"><a href="#"><img src="C:\Users\AdminWS\Downloads\new.jpg" width="100%" height="300px"></a>
+            <div class="top-left"><a href="#"><b>ARCHITECTURE</b></a></div>
+            <div class="bottom-left"><a href="#" style="font-size: 25px; font-family: Lato,sans-serif;"><b>New York City</b></a></div>
+            <div class="top-right"><a href="#"><b>1 COMMENTS</b></a></div>
+        </div>
+    </div>
+ 
+   <div style="height:20px; background-color:black;"></div>
+
+    <div style="display:flex; height:80px; position:sticky; top:40px; border:solid black; background-color: aliceblue; z-index:1;">
+        <div style="display: flex; flex-basis:150px; justify-content:flex-end; align-items:flex-end; border-right:solid black;padding:0 10px 10px 0; font-size:20px;"><a href="#" style="text-decoration: none;color:blue; font-family:Lato,sans-serif;"><b>GAZETTE</b></a></div>
+        <div style="display: flex; flex:1; align-items: center;">
+        <ul class="navlist">
+            <li style="border-left:none;"><a href="#">Architecture</a></li>
+            <li><a href="#">Cars</a></li>
+            <li><a href="#">Food</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Web</a></li>
+            <li><a href="#">Style Demo</a></li>
+            <li><a href="#">About Gazette</a></li>
+        </ul>
+        <div style="display: flex; flex:1; align-items: center; justify-content:flex-end;">
+        <form>    
+        <input type="text" placeholder="Search..">
+        <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        </div>
+        </div>
+    </div>
+
+    <div style="margin-left:60px; margin-right:60px;">
+    <div class="container1" style="grid-template-areas:'tech auto auto';">
+        <div class="item1">TECHNOLOGY<br><br><img src="C:\Users\AdminWS\Downloads\phone.jpg" width="100%" height="450px" style="filter:blur(1px);"></div>
+        <div>WEB<br><br><img src="C:\Users\AdminWS\Downloads\proto.jpg" width="100%" height="250px"></div>
+        <div>ARCHITECTURE<br><br><img src="C:\Users\AdminWS\Downloads\archi.jpg" width="100%" height="250px"></div>
+        <div class="deco" style="color:white; padding-left:20px; padding-right:20px; z-index:1;"><a href="#" style="color: white;">Phone test</a><br><br> March 13,2015<br><br>And then the moonlight flooded the cave,
+         and there before me lay my own body as it had been lying all these hours, with the eyes <a href="#" style="font-size:16px; color:white">… Continue reading</a></div>
+        <div class="deco"><a href="#">The best proptotyping apps</a><br><br>14 March 2015<br><br>Unable longer to resist the temptation to escape this horrible place I leaped quickly through the opening into the starlight of a clear Arizona night. The crisp, 
+        fresh mountain air outside the cave acted as an immediate tonic and I<a href="#" style="font-size:16px;">… Continue reading</a></div>
+        <div class="deco"><a href="#">Paris</a><br><br>March 13,2015<br><br>I replied in our good old English tongue merely to convince him that neither of us could understand the other; but I noticed that when I smiled slightly on 
+        concluding, he did likewise. This fact, and the similar occurrence during<a href="#" style="font-size:16px;">… Continue reading</a></div>
+
+    </div>
+    </div>
+    <div style="margin-left:60px; margin-right:60px;">
+        <div class="container1" style="grid-template-areas:'auto auto tech';">
+            <div>TECHNOLOGY<br><br><img src="C:\Users\AdminWS\Downloads\photo.jpg" width="100%" height="250px"></div>
+            <div>CARS<br><br><img src="C:\Users\AdminWS\Downloads\engine.jpg" width="100%" height="250px"></div>
+            <div class="item1">FOOD<br><br><img src="C:\Users\AdminWS\Downloads\dish.jpg" width="100%" height="450px" style="filter:blur(1px);"></div>
+            <div class="deco"><a href="#">New photography gear</a><br><br>14 March 2015<br><br>Few western wonders are more inspiring than the beauties of an Arizona moonlit landscape; the silvered mountains in the distance, the strange lights and shadows upon hog back
+             and arroyo, and the grotesque details of the stiff, yet beautiful cacti<a href="#" style="font-size:16px;">… Continue reading</a></div>
+            <div class="deco"><a href="#">Petrol or Diesal?</a><br><br>March 13,2015<br><br>Springing to my feet I received my first Martian surprise, for the effort, which on Earth would have brought me standing upright, carried me into the Martian air to 
+            the height of about three yards. I alighted softly upon the<a href="#" style="font-size:16px;">… Continue reading</a></div>
+            <div class="deco" style="color:white; padding-left:20px; padding-right:20px; z-index:1;"><a href="#" style="color: white;">The perfect dish</a><br><br> March 13,2015<br><br>We had gone perhaps ten miles when the ground began to rise very rapidly. 
+            We were, as I was later to learn, nearing the edge of <a href="#" style="font-size:16px; color:white">… Continue reading</a></div>
+        </div>
+        </div>
+
+        <div style="margin-left:60px; margin-right:60px;">
+            <div class="container1" style="grid-template-areas:'auto tech hello';">
+                <div>WEB<br><br><video width="100%" height="250px" controls>
+                    <source src="C:\Users\AdminWS\Downloads\movie.mp4" type="video/mp4"></video>
+                </div>
+                <div class="item1">TECHNOLOGY<br><br><img src="C:\Users\AdminWS\Downloads\dj.jpg" width="100%" height="450px" style="filter:blur(1px);"></div>
+                <div>CARS<br><br><img src="C:\Users\AdminWS\Downloads\bmw.jpg" width="100%" height="250px"></div>
+                <div class="deco"><a href="#">The state of the word 2014</a><br><br>14 March 2015<br><br>If you just want the bullet points, here are the big things Matt discussed and announced: There will be 81 WordCamps in 2014. This was the 9th and final 
+                WordCamp San Francisco in its current form. We’ve maxed out the venue <a href="#" style="font-size:16px;">… Continue reading</a></div>
+                <div class="deco" style="color:white; padding-left:20px; padding-right:20px; z-index:1;"><a href="#" style="color: white;">DJ Tools</a><br><br> March 13,2015<br><br>Most of these details I noted later, for I was given but 
+                little time to speculate on the wonders of my new discovery. I had seen<a href="#" style="font-size:16px; color:white">...continue reading</a></div>
+                <div class="deco"><a href="#">Petrol or Diesal?</a><br><br>March 13,2015<br><br>On such a little thing my life hung that I often marvel that I escaped so easily. Had not the rifle of the leader of the party 
+                swung from its fastenings beside his saddle in such a way as to<a href="#" style="font-size:16px;">… Continue reading</a></div>
+        </div>
+        </div>
+
+        <div style="margin-left:60px; margin-right:60px;">
+            <div class="container1" style="grid-template-areas:'auto tech hello';">
+                <div>FOOD<br><br><img src="C:\Users\AdminWS\Downloads\museli.jpg" width="100%" height="250px" >
+                </div>
+                <div class="item1">WEB<br><br><a href="#"><img src="C:\Users\AdminWS\Downloads\blue.png" width="100%" height="270px"></a></div>
+                <div>FOOD<br><br><img src="C:\Users\AdminWS\Downloads\fruit.jpg" width="100%" height="250px"></div>
+                <div class="deco"><a href="#">Homemade Museli</a><br><br>14 March 2015<br><br>And his mount! How can earthly words describe it! It towered ten feet at the shoulder; had four legs on either side; a broad flat tail, 
+                larger at the tip than at the root, and which it held straight out …<a href="#" style="font-size:16px;">… Continue reading</a></div>
+                <div class="deco" style="background-color: rgb(76, 76, 205); color:white; padding-left:20px; padding-right:20px;"><a href="#" style="color: white;">Learn Word Press</a><br><br> March 13,2015<br><br>Always wanted to be a blogging superstar? Or simply want to learn your 
+                way around WordPress.com? Check out Learn WordPress.com. <a href="#" style="font-size:16px; color:white">Continue reading</a></div>
+                <div class="deco"><a href="#">Protein shake vs Real food</a><br><br>March 13,2015<br><br>With the exception of their ornaments all were naked. The women varied in appearance but little from the men, except that their tusks were much larger
+                 in proportion to their height, in some instances curving nearly to their high-set ears. …<a href="#" style="font-size:16px;">… Continue reading</a></div>
+        </div>
+        </div>
+
+        <div style="margin-left:60px; margin-right:60px;">
+            <div class="container1" style="grid-template-areas:'auto tech hello';">
+                <div>WEB<br><br><iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" width="100%" height="250px" ></iframe>
+                </div>
+                <div class="item1">FOOD<br><br><img src="C:\Users\AdminWS\Downloads\mac.jpg" width="100%" height="250px"></div>
+                <div>ARCHITECTURE<br><br><img src="C:\Users\AdminWS\Downloads\italy.jpg" width="100%" height="250px"></div>
+                <div class="deco"><a href="#">"THIS IS US!"</a><br><br>14 March 2015<br><br>Matt Mullenweg founded WordPress to “democratize publishing for the world.” In his interview with “This is Us!”, Matt explains
+                 the community-focused business philosophy behind the amazing success of WordPress.…<a href="#" style="font-size:16px;">… Continue reading</a></div>
+                <div class="deco"><a href="#">Macarons</a><br><br> March 13,2015<br><br>I was determined, however, to explore the low structure which was the only evidence of habitation in sight, and so I hit upon the 
+                unique plan of reverting to first principles in locomotion, creeping. I did fairly well at this …<a href="#" style="font-size:16px;">… Continue reading</a></div>
+                <div class="deco"><a href="#">Italy</a><br><br>March 13,2015<br><br>The fellow whom I had struck lay where he had fallen, nor did any of his mates approach him. Tars Tarkas advanced toward me, 
+                holding out one of his arms, and we thus proceeded to the plaza without further mishap. <a href="#" style="font-size:16px;">… Continue reading</a></div>
+        </div>
+        </div>
+
+        <div class="container2"><div style="flex-basis:600px; color: grey;"><span style="color: blue;"><b>GAZETTE</b></span><br>A clean and flexible theme 
+        perfectly suited for minimalist magazine-style sites, personal blogs, or any content-rich site.</div>
+        <div>xtugcjjt<br><br><a href="#" style="text-decoration: none;"><span style="text-decoration: none; font-size: 16px; color:grey;">Website Powered by WordPress.com</span></a></div>
+        </div>
+</body>
+</html>
